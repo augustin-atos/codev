@@ -2,7 +2,7 @@
 require('../include/session.inc.php');
 
 /*
-   PETIT TEST POUR VOIR SI CA MARCHE BIEN 
+   PETIT TEST POUR VOIR SI CA MARCHE BIEN 2
    
    OUI CA MARCHE PLUTOT BIEN
    
