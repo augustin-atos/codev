@@ -2,7 +2,7 @@
 require('../include/session.inc.php');
 
 /*
-   PETIT TEST POUR VOIR SI CA MARCHE BIEN 2
+   PETIT TEST POUR VOIR SI CA MARCHE BIEN 
    
    OUI CA MARCHE PLUTOT BIEN
    
@@ -107,7 +107,11 @@ class ExportCSVMonthlyController extends Controller {
 
       // returns : $projectTracks[projectid][bugid][jobid] = duration
       $projectTracks = $timeTracking->getProjectTracks();
-
+      
+      //essai débug virgule/point
+      string number_format ( float $number , int $decimals = 3 , string $dec_point = "," , string $thousands_sep = " " )
+      
+      
       foreach ($projectTracks as $projectId => $bugList) {
          $totalEffortEstim = 0;
          $totalElapsed = 0;
