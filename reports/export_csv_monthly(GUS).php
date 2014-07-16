@@ -2,7 +2,9 @@
 require('../include/session.inc.php');
 
 /*
-   PETIT TEST POUR VOIR SI CA MARCHE BIEN 
+   PETIT TEST POUR VOIR SI CA MARCHE PLUTOT BIEN 
+   
+   OUI CA MARCHE BIEN
    
    This file is part of CoDev-Timetracking.
 
