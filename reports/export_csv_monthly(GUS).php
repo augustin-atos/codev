@@ -108,8 +108,8 @@ class ExportCSVMonthlyController extends Controller {
       // returns : $projectTracks[projectid][bugid][jobid] = duration
       $projectTracks = $timeTracking->getProjectTracks();
       
-      //essai débug virgule/point
-      string number_format ( float $number , int $decimals = 3 , string $dec_point = "," , string $thousands_sep = " " )
+   
+   
       
       
       foreach ($projectTracks as $projectId => $bugList) {
@@ -178,7 +178,11 @@ class ExportCSVMonthlyController extends Controller {
          $stringData .= "\n";
 
          $stringData .="\n";
-         fwrite($fh, $stringData);
+         
+         // replace dots from stringData by ,
+         $formatedStringData = str_replace(".", ",", $stringData);
+         
+         fwrite($fh, $formatedStringData);
       }
       fclose($fh);
       return $myFile;
