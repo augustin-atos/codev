@@ -2,6 +2,8 @@
 require('../include/session.inc.php');
 
 /*
+   PETIT TEST POUR VOIR SI CA MARCHE BIEN 
+   
    This file is part of CoDev-Timetracking.
 
    CoDev-Timetracking is free software: you can redistribute it and/or modify
