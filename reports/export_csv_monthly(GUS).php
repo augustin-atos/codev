@@ -179,7 +179,7 @@ class ExportCSVMonthlyController extends Controller {
 
          $stringData .="\n";
          
-         // replace dots from stringData by ,
+         // replace dots from stringData by comma
          $formatedStringData = str_replace(".", ",", $stringData);
          
          fwrite($fh, $formatedStringData);
